@@ -5,6 +5,8 @@ export class MapDownload implements mapboxgl.IControl {
   _btn!: HTMLElement;
   elem!: HTMLElement;
 
+  constructor() {}
+
   container(child: HTMLElement) {
     let container = document.createElement('div');
     container.className = 'mapboxgl-ctrl mapboxgl-ctrl-group';
