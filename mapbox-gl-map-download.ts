@@ -1,6 +1,6 @@
 import * as mapboxgl from "mapbox-gl";
 
-export class MapDownload implements mapboxgl.IControl {
+module.exports = class MapDownload implements mapboxgl.IControl {
   _map!: mapboxgl.Map;
   _btn!: HTMLElement;
   elem!: HTMLElement;
