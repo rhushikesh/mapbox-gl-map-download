@@ -11,10 +11,8 @@ function css() {
 }
 
 function js() {
-  return src("src/*.ts", { sourcemaps: true })
-    .pipe(tsProject())
-    .pipe(concat("mapbox-gl-map-download.js"))
-    .pipe(dest("dist/", { sourcemaps: true }));
+  var tsResult = tsProject.src().pipe(tsProject());
+    return tsResult.js.pipe(dest("dist/"));
 }
 
 exports.default = parallel(css, js);
