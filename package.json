@@ -5,7 +5,7 @@
   "main": "dist/mapbox-gl-map-download.js",
   "types": "dist/mapbox-gl-map-download.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,11 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-typescript": "^5.0.1",
+    "gulp-cli": "^2.2.0",
     "mapbox-gl": "^1.4.1"
   }
 }
