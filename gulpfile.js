@@ -14,7 +14,7 @@ function js() {
   return src("src/*.ts", { sourcemaps: true })
     .pipe(tsProject())
     .pipe(concat("mapbox-gl-map-download.js"))
-    .pipe(dest("dist/"));
+    .pipe(dest("dist/", { sourcemaps: true }));
 }
 
 exports.default = parallel(css, js);
