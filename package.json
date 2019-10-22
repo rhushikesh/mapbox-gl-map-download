@@ -1,11 +1,11 @@
 {
   "name": "mapbox-gl-map-extract",
-  "version": "1.0.5",
+  "version": "1.0.10",
   "description": "MapboxGL control to download map",
   "main": "dist/mapbox-gl-map-download.js",
   "types": "dist/mapbox-gl-map-download.d.ts",
   "scripts": {
-    "build": "gulp"
+    "build": "rm -rf dist node_modules && npm install && gulp"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 import * as mapboxgl from "mapbox-gl";
 
-module.exports = class MapDownload implements mapboxgl.IControl {
+class MapDownload implements mapboxgl.IControl {
   _map!: mapboxgl.Map;
   _btn!: HTMLElement;
   elem!: HTMLElement;
@@ -60,3 +60,5 @@ module.exports = class MapDownload implements mapboxgl.IControl {
 
   getDefaultPosition?: (() => string) | undefined = () => 'top-right';
 }
+
+export default MapDownload 
