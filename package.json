@@ -1,6 +1,6 @@
 {
   "name": "mapbox-gl-map-extract",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "MapboxGL control to download map",
   "main": "dist/mapbox-gl-map-download.js",
   "types": "dist/mapbox-gl-map-download.d.ts",
